@@ -1,5 +1,5 @@
 import {todoSlice, addTodo, removeTodo} from './slice';
-import {v4 as uuidv4} from 'uuid';
+import uuid from 'react-native-uuid';
 
 describe('todo reducer', () => {
   it('should return initial state on first run', () => {
@@ -18,7 +18,7 @@ describe('todo reducer', () => {
   });
 
   it('should remove todo from list', () => {
-    const id = uuidv4();
+    const id = uuid.v4();
     const todoState = todoSlice.reducer(
       {list: [{id, text: 'oldTodo'}]},
       removeTodo(id),
