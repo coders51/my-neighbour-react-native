@@ -14,6 +14,7 @@ import AppTitle from '../../atoms/AppTitle/AppTitle';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 import TodoList from '../../organisms/TodoList/TodoList';
+import Fetch from '../../molecules/Fetch/Fetch';
 
 export default () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -32,6 +33,7 @@ export default () => {
           }}>
           <AppTitle />
           <TodoList />
+          <Fetch />
         </View>
       </TouchableWithoutFeedback>
     </>
