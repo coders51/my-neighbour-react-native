@@ -16,5 +16,14 @@ describe('Todo', () => {
     await expect(element(by.id('textInput'))).toBeVisible();
     await element(by.id('textInput')).typeText('New Todo');
     await element(by.id('addButton')).tap();
+    await expect(element(by.text('New Todo'))).toBeVisible();
+  });
+  it('should remove a Todo', async () => {
+    await expect(element(by.id('textInput'))).toBeVisible();
+    await element(by.id('textInput')).typeText('New Todo');
+    await element(by.id('addButton')).tap();
+    await expect(element(by.text('New Todo'))).toBeVisible();
+    await element(by.id('deleteButton')).tap();
+    await expect(element(by.text('New Todo'))).toBeNotVisible();
   });
 });
