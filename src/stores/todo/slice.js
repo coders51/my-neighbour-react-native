@@ -1,5 +1,5 @@
 import {createSlice} from '@reduxjs/toolkit';
-import {v4 as uuidv4} from 'uuid';
+import uuid from 'react-native-uuid';
 import {filter} from 'lodash';
 
 export const todoSlice = createSlice({
@@ -11,7 +11,7 @@ export const todoSlice = createSlice({
     addTodo: (state, {payload}) => {
       return {
         ...state,
-        list: [...state.list, {id: uuidv4(), text: payload}],
+        list: [...state.list, {id: uuid.v4(), text: payload}],
       };
     },
     removeTodo: (state, {payload}) => {
