@@ -9,6 +9,7 @@ export default ({onChangeText, text}) => {
 
   return (
     <TextInput
+      testID="textInput"
       style={{...styles.input, color: isDarkMode ? Colors.white : Colors.black}}
       onChangeText={onChangeText}
       value={text}

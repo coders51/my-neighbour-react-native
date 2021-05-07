@@ -8,7 +8,7 @@ export default ({onPress}) => {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
-    <TouchableOpacity onPress={onPress}>
+    <TouchableOpacity onPress={onPress} testID="addButton">
       <Text
         style={{
           ...styles.text,

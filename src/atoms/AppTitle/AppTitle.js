@@ -9,6 +9,7 @@ export default () => {
 
   return (
     <Text
+      testID="appTitle"
       style={{
         ...styles.text,
         color: isDarkMode ? Colors.white : Colors.black,
