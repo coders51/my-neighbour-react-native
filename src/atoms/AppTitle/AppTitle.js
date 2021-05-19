@@ -4,7 +4,7 @@ import {StyleSheet, Text, useColorScheme} from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
-export default () => {
+export default ({text}) => {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
@@ -12,9 +12,8 @@ export default () => {
       style={{
         ...styles.text,
         color: isDarkMode ? Colors.white : Colors.black,
-      }}
-    >
-      My Neighbour React Native
+      }}>
+      {text}
     </Text>
   );
 };

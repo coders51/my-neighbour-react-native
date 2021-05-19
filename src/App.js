@@ -1,41 +1,20 @@
 import React from 'react';
+import 'react-native-gesture-handler';
+import {createStackNavigator} from '@react-navigation/stack';
 
-import {
-  SafeAreaView,
-  StatusBar,
-  StyleSheet,
-  useColorScheme,
-  View,
-} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import Home from './pages/Home/Home';
+import Details from './pages/Details/Details';
 
-import {Colors} from 'react-native/Libraries/NewAppScreen';
-import AppTitle from './atoms/AppTitle/AppTitle';
+const Stack = createStackNavigator();
 
 export default () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <View
-        style={{
-          ...styles.body,
-          backgroundColor: isDarkMode ? Colors.black : Colors.white,
-        }}>
-        <AppTitle />
-      </View>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Details" component={Details} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  body: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100%',
-  },
-});
