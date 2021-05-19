@@ -1,4 +1,4 @@
-Branches
+### Branches
 
 `main` -> startup React Native application
 
@@ -10,9 +10,12 @@ Branches
 
 `swiss-army-knife` -> testing branch used during the demonstration of the React Native's tooltip ecosystem
 
-Resources
+### Resources
 
 https://reactnative.dev/
+
 https://react-native-community.github.io/upgrade-helper/
+
 https://appcenter.ms/
+
 https://egghead.io
