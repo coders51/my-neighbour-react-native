@@ -12,7 +12,8 @@ export default () => {
       style={{
         ...styles.text,
         color: isDarkMode ? Colors.white : Colors.black,
-      }}>
+      }}
+    >
       My Neighbour React Native
     </Text>
   );
