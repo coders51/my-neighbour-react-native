@@ -6341,10 +6341,10 @@ rc@^1.0.1, rc@^1.1.6:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-devtools-core@4.24.4, react-devtools-core@^4.23.0:
-  version "4.24.4"
-  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-4.24.4.tgz#adaa54569f87ce7c08384d12e0b35122a755cbae"
-  integrity sha512-jbX8Yqyq4YvFEobHyXVlGaH0Cs/+EOdb3PL911bxaR5BnzbB5TE4RFHC1iOgT4vRH3VxIIrVQ7lR9vsiFFCYCA==
+react-devtools-core@4.22.0, react-devtools-core@4.24.4, react-devtools-core@^4.23.0:
+  version "4.22.0"
+  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-4.22.0.tgz#f5930091e8529fae3f0ae12725d1ea2834a0b7d6"
+  integrity sha512-OYY2FO+z+w/N7kVZr2x0rVOD2QCGZoRThbs1diJ2Az0rqtMxyk0JJvsr7FS9+b5CJkWQ2Ro810BCnySygOt2pA==
   dependencies:
     shell-quote "^1.6.1"
     ws "^7"
